@@ -13,13 +13,13 @@ import (
 
 func main() {
 	srv := micro.NewService(
-		micro.Name("go.micro.srv.user-cli"),
+		micro.Name("shippy.user-cli"),
 		micro.Version("latest"),
 	)
 
 	srv.Init()
 
-	client := pb.NewUserServiceClient("go.micro.srv.user", microClient.DefaultClient)
+	client := pb.NewAuthClient("shippy.auth", microClient.DefaultClient)
 
 	name := "Test Name"
 	email := "test@example.com"

@@ -5,7 +5,8 @@ import (
 	"os"
 
 	"context"
-	pb "github.com/erikperttu/shippy-user-service/proto/user"
+
+	pb "github.com/erikperttu/shippy-user-service/proto/auth"
 	"github.com/micro/go-micro"
 	microClient "github.com/micro/go-micro/client"
 )
